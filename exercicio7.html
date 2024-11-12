@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Predominância da Liga</title>
+    <link rel="stylesheet" href="exercicio7.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador de Predominância da Liga</h1>
+
+        <label for="metalPercentage">Percentual de Metal (%):</label>
+        <input type="number" id="metalPercentage" required placeholder="Ex: 60" min="0" max="100" step="1">
+
+        <label for="nonMetalPercentage">Percentual de Ametal (%):</label>
+        <input type="number" id="nonMetalPercentage" required placeholder="Ex: 40" min="0" max="100" step="1">
+
+        <button type="button" onclick="checkAlloyComposition()">Verificar Predominância</button>
+        
+        <p id="resultMessage"></p>
+    </div>
+    
+    <script src="exercicio7.js"></script>
+</body>
+</html>

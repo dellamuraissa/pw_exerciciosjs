@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Valores do Vetor</title>
+    <link rel="stylesheet" href="exercicio9.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Valores do Vetor</h1>
+
+        <label for="valueInput">Digite um valor:</label>
+        <input type="number" id="valueInput" placeholder="Ex: 5" min="0">
+        <button type="button" onclick="addValue()">Adicionar Valor</button>
+
+        <div class="buttons">
+            <button onclick="showAllValues()">Mostrar Todos os Valores</button>
+            <button onclick="showMaxValue()">Mostrar Maior Valor</button>
+            <button onclick="showMinValue()">Mostrar Menor Valor</button>
+        </div>
+
+        <p id="resultMessage"></p>
+    </div>
+    
+    <script src="exercicio9.js"></script>
+</body>
+</html>

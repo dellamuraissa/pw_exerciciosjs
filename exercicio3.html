@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura de Vetor</title>
+    <link rel="stylesheet" href="exercicio3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leitura de Vetor de Números</h1>
+        <form id="numberForm">
+            <label>Digite 10 números inteiros:</label>
+            <div id="inputContainer">
+                <!-- Campos para os 10 números -->
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+                <input type="number" class="number-input" required>
+            </div>
+            <button type="button" onclick="processNumbers()">Processar</button>
+        </form>
+        <div id="resultContainer">
+            <p id="aboveAverage"></p>
+            <p id="negativeCount"></p>
+        </div>
+    </div>
+    <script src="exercicio3.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Proporções em Ligações Químicas</title>
+    <link rel="stylesheet" href="exercicio8.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Proporções em Ligações Químicas</h1>
+
+        <div class="section">
+            <h2>Ligações Iônicas</h2>
+            <label for="metalElectrons">Elétrons que o metal perde:</label>
+            <input type="number" id="metalElectrons" required placeholder="Ex: 1" min="1">
+
+            <label for="nonMetalElectrons">Elétrons que o ametal ganha:</label>
+            <input type="number" id="nonMetalElectrons" required placeholder="Ex: 1" min="1">
+
+            <button type="button" onclick="calculateIonicBond()">Calcular Ligação Iônica</button>
+            <p id="ionicBondResult"></p>
+        </div>
+
+        <div class="section">
+            <h2>Ligações Covalentes</h2>
+            <label for="atom1Bonds">Número de ligações do átomo 1:</label>
+            <input type="number" id="atom1Bonds" required placeholder="Ex: 2" min="1">
+
+            <label for="atom2Bonds">Número de ligações do átomo 2:</label>
+            <input type="number" id="atom2Bonds" required placeholder="Ex: 1" min="1">
+
+            <button type="button" onclick="calculateCovalentBond()">Calcular Ligação Covalente</button>
+            <p id="covalentBondResult"></p>
+        </div>
+    </div>
+    
+    <script src="exercicio8.js"></script>
+</body>
+</html>
